@@ -26,6 +26,7 @@ mkdir /tmp/runbook-demo
 
 o/p
 created an empty directory
+
 ------------------------------------------------------------------------
 cp /etc/hosts /tmp/runbook-demo/ 
 
@@ -37,6 +38,7 @@ ls -l /tmp/runbook-demo
 
 o/p
 total 4
+
 ------------------------------------------------------------------------
 ## CPU and Memory Check
 
@@ -44,10 +46,12 @@ total 4
 
 free -h
 
+o/p
 ubuntu@ip-172-31-26-178:~$ free -h
                total        used        free      shared  buff/cache   available
 Mem:           914Mi       409Mi       176Mi       2.8Mi       488Mi       504Mi
 Swap:             0B          0B          0B
+
 ------------------------------------------------------------------------
 
 ### Command
@@ -61,6 +65,7 @@ ps 1272 - ps pid
 o/p
    PID TTY      STAT   TIME COMMAND
    1272 ?        S      0:00 sshd: ubuntu@pts/0
+   
 ------------------------------------------------------------------------
 ## Disk Check
 ### Command
@@ -81,6 +86,7 @@ du -sh  /var/log
 
 o/p
 309M    /var/log
+
 ------------------------------------------------------------------------
 ## Log Check
 ### Command
@@ -89,6 +95,7 @@ journalctl -u ssh -n 50
 
 o/p
 no errors found
+
 ------------------------------------------------------------------------
 
 ## If this worsens
