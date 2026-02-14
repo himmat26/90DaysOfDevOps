@@ -15,6 +15,7 @@ cd /var/log/nginx
 ls
 cat access.log
 cat error.log
+$ scp -i 'Linux-tu.pem' ubuntu@ec2-13-53-35-255.eu-north-1.compute.amazonaws.com:/var/log/nginx/logs.txt /c/Users/himmats
 
 ## Issue encountered::
 Permission Denied (publickey)
