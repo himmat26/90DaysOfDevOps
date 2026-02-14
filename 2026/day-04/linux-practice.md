@@ -29,4 +29,4 @@
  - Inspected a service (nginx)
  - Validated the logs for nginx
  - SSH handson
- - SCP handon - download day 04 output from EC2 to local
+ - SCP handson - download day 04 output from EC2 to local
