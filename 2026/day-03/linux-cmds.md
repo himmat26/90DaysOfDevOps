@@ -1,4 +1,4 @@
-Process Management:
+##Process Management:
 ps - process snapshot, report a snapshot of the current processes, no real time updates.
 top - live process montior baisc, real time updates. to ue - quick sytem checks, CPU/memory usage, identify heavy process
 htop - interactive process viewer / human-friendly top. interactive version of top.
@@ -8,7 +8,7 @@ kill -9 - force kill
 
 
 
-File system:
+##File system:
 
 pwd - to check present working directory 
 mkdir- to create a new directory
@@ -25,7 +25,7 @@ tail - to display last 10 lines in a file.
 tail -n 4 - to display n number of lines of a file from bottom.
 less filename - Read a file with forward and backward navigation. Often used with pipe, It is particularly useful for large files as it does not load the entire file into memory, but rather accesses it page by page. Pg up & pg dn to scroll.
 
-File permissions:
+##File permissions:
 
 chmod 444 - to change the permissions for a file for user,group,others(rwx)
 chown user file - to change the owner of the file
@@ -33,7 +33,7 @@ chgrp group file - to change the group of the file
 
 
 
-Networking:
+##Networking:
 
 ping - Tests network connectivity and packet loss to a host.
 ifconfig - Displays network interface configuration
