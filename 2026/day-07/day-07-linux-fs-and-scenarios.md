@@ -60,13 +60,13 @@ A developer asks: "Where are the logs for the 'docker' service?"
 The service is managed by systemd.
 What commands would you use?
 
-# Check service status first
+- Check service status first
 systemctl status docker
 
-# View last 50 lines of logs
+- View last 50 lines of logs
 journalctl -u docker -n 50
 
-# Follow logs in real-time
+- Follow logs in real-time
 journalctl -u docker -f
 ---------------------------------------------------------------------------------------------------------------
 ## Scenario 4: File Permissions Issue
