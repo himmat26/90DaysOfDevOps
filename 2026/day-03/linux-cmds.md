@@ -1,7 +1,7 @@
 ## Process Management:
 
 ps - process snapshot, report a snapshot of the current processes, no real time updates.
-top - live process montior baisc, real time updates. to ue - quick sytem checks, CPU/memory usage, identify heavy process
+top - live process monitor basic, real time updates. to use - quick system checks, CPU/memory usage, identify heavy process
 htop - interactive process viewer / human-friendly top. interactive version of top.
 atop - Advanced System & Process Monitor. Used in performance troubleshooting, I/O bottleneck analysis, Post incident analysis.
 kill - It does not immediately destroy it. It sends a signal to process to stop.
