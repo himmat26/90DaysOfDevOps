@@ -86,12 +86,12 @@ Create `server_check.sh` that:
         echo "please select a valid option"
     fi
     # Output1:
-     Enter the Name of a service: nginx
-     Do you want to check the status? (y/n) y
-     Service nginx is inactive
+    - Enter the Name of a service: nginx
+    - Do you want to check the status? (y/n) y
+    - Service nginx is inactive
     # Output2:
-     Enter the Name of a service: ssh
-     Do you want to check the status? (y/n) n
-     Skipped.
+    - Enter the Name of a service: ssh
+    - Do you want to check the status? (y/n) n
+    - Skipped.
 
 ------------------------------------------------------------------------------------------------------
