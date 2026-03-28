@@ -154,14 +154,14 @@ Destroy complete! Resources: 1 destroyed.
 Go to the AWS S3 console and verify your bucket exists.
     hawk-terraform-fb bucket created in AWS S3 console.
 
-**Document:** What did `terraform init` download? What does the `.terraform/` directory contain?
+  *Document:** What did `terraform init` download? What does the `.terraform/` directory contain?
 
 - Finding latest version of hashicorp/aws...
 - Installing hashicorp/aws v6.38.0...
 - Installed hashicorp/aws v6.38.0 (signed by HashiCorp)
 The `terraform init` command initializes the Terraform working directory and downloads the necessary provider plugins specified in the configuration. In this case, it downloaded the AWS provider plugin version 6.38.0.
 
-The `.terraform/` directory contains the downloaded provider plugins. inside terraform directory providers is there inside which aws provider is there. This directory is created when you run `terraform init` and it stores the plugins that Terraform uses to interact with the specified cloud providers (like AWS in this case). It ensures that Terraform has the necessary code to manage resources on AWS as defined in your configuration files.
+  The `.terraform/` directory contains the downloaded provider plugins. inside terraform directory providers is there inside which aws provider is there. This directory is created when you run `terraform init` and it   stores the plugins that Terraform uses to interact with the specified cloud providers (like AWS in this case). It ensures that Terraform has the necessary code to manage resources on AWS as defined in your configuration   files.
 ---
 
 ### Task 4: Add an EC2 Instance
@@ -191,7 +191,7 @@ aws_instance.example: Creation complete after 12s [id=i-0555a0420a76e8a13]
 
 Go to the AWS EC2 console and verify your instance is running with the correct name tag.
 
-**Document:** How does Terraform know the S3 bucket already exists and only the EC2 instance needs to be created?
+*Document:** How does Terraform know the S3 bucket already exists and only the EC2 instance needs to be created?
 
 when we run 'terraform apply' it checks the current state of bucket in AWS and compares it with the desired state defined in our `main.tf` file. Since the bucket already exists, Terraform recognizes that it does not need to create it again. It only identifies that the EC2 instance is missing and needs to be created to match the desired state. This is because Terraform maintains a state file (`terraform.tfstate`) that keeps track of all the resources it manages.
 
